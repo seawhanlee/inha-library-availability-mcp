@@ -1,0 +1,19 @@
+{
+  "SearchResult": {
+    "Statistics": { "TotalHits": 1 },
+    "Data": { "Records": [{
+      "Header": { "DbId": "asn", "An": "123", "PubType": "Academic Journal", "PubTypeId": "academicJournal" },
+      "PLink": "https://search.ebscohost.com/login.aspx?direct=true&db=asn&AN=123",
+      "Items": [
+        { "Name": "Title", "Data": "A &amp; B: Reliable Systems" },
+        { "Name": "Author", "Data": "Kim, Mina" },
+        { "Name": "PublicationDate", "Data": "2024" },
+        { "Name": "DOI", "Data": "https://doi.org/10.1000/example" }
+      ],
+      "FullText": {
+        "Links": [{ "Type": "pdflink" }],
+        "Text": { "Availability": "0" }
+      }
+    }] }
+  }
+}

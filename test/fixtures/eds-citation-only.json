@@ -1,0 +1,16 @@
+{
+  "SearchResult": {
+    "Statistics": { "TotalHits": 1 },
+    "Data": { "Records": [{
+      "Header": { "DbId": "edb", "An": "456", "PubType": "eBook", "PubTypeId": "book" },
+      "PLink": "https://search.ebscohost.com/detail/456",
+      "Items": [
+        { "Name": "Title", "Data": "Practical Testing" },
+        { "Name": "Author", "Data": "Lee, Hana" },
+        { "Name": "PublicationDate", "Data": "2022" },
+        { "Name": "ISBN", "Data": "978-1-234-56789-0" }
+      ],
+      "FullText": { "Links": [], "CustomLinks": [] }
+    }] }
+  }
+}

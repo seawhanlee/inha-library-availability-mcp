@@ -1,0 +1,18 @@
+{
+  "success": true,
+  "code": "success.retrieved",
+  "data": {
+    "list": [{
+      "id": 1086448,
+      "titleStatement": "해리 포터. 2, 죽음의 성물",
+      "author": "롤링, J. K.",
+      "publication": "파주 : 문학수첩, 2020",
+      "isbn": "978-89-8392-808-5",
+      "biblioType": { "name": "단행본(동양)", "materialType": { "name": "단행본" } },
+      "branchVolumes": [{
+        "name": "정석학술정보관", "volume": "823 롤298리 v.7-2",
+        "cState": "대출가능", "cStateCode": "READY"
+      }]
+    }]
+  }
+}

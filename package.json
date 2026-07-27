@@ -1,0 +1,60 @@
+{
+  "name": "inha-library-availability-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for point-in-time Inha Library physical and electronic availability checks",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "inha-university",
+    "library",
+    "ebsco"
+  ],
+  "author": "Seawhan Lee",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seawhanlee/inha-library-availability-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/seawhanlee/inha-library-availability-mcp/issues"
+  },
+  "homepage": "https://github.com/seawhanlee/inha-library-availability-mcp#readme",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "inha-library-availability-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:live": "INHA_LIVE_TEST=1 vitest run test/live.test.ts",
+    "dev": "tsx src/index.ts",
+    "inspect": "npx @modelcontextprotocol/inspector npx tsx src/index.ts",
+    "prepublishOnly": "npm run typecheck && npm test && npm run build"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "2.0.0-beta.5",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/client": "2.0.0-beta.5",
+    "@types/node": "^24.0.0",
+    "tsx": "^4.20.0",
+    "typescript": "^6.0.0",
+    "vitest": "^3.2.0"
+  }
+}

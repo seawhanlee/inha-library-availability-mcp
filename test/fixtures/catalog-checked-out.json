@@ -1,0 +1,11 @@
+{
+  "id": 22,
+  "titleStatement": "Distributed Systems",
+  "author": "Maarten van Steen; Andrew S. Tanenbaum",
+  "publication": "2023",
+  "isbn": "9780000000022",
+  "branchVolumes": [{
+    "name": "정석학술정보관", "volume": "QA 76 D5",
+    "cState": "대출중", "cStateCode": "CHARGED"
+  }]
+}
