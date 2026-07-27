@@ -13,6 +13,14 @@ It combines:
 
 It does not log in, reserve or borrow materials, bypass network restrictions, or download protected content.
 
+## Documentation
+
+- [Installation and MCP client setup](docs/installation.md)
+- [Tool and result reference](docs/tool-reference.md)
+- [Architecture and matching behavior](docs/architecture.md)
+- [Troubleshooting](docs/troubleshooting.md)
+- [Development and releases](docs/development.md)
+
 ## Requirements and setup
 
 - Node.js 20 or newer
@@ -24,10 +32,16 @@ npm run build
 npm test
 ```
 
-After the first npm release, users can also install it globally:
+Install the published package globally with:
 
 ```sh
 npm install --global inha-library-availability-mcp
+```
+
+For a no-install setup, configure an MCP client to launch:
+
+```sh
+npx -y inha-library-availability-mcp@1.0.1
 ```
 
 Run the stdio server with either:
@@ -76,6 +90,8 @@ Every result includes a status, confidence, confirmed match when one exists, phy
 Electronic links may still require an Inha login or campus network. Results are point-in-time observations.
 
 ## Host configuration
+
+See the [installation guide](docs/installation.md) for npm, `npx`, source builds, Windows examples, environment variables, updates, and uninstallation.
 
 Build first, then replace `/absolute/path/to/Book Search MCP` below with this repository's absolute path.
 
