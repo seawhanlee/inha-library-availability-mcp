@@ -164,12 +164,13 @@ The MCP TypeScript v2 package is currently beta; dependency versions are pinned 
 
 GitHub Actions runs typechecking, tests, builds, and package verification on Node.js 20, 22, and 24 for every pull request and push to `main`.
 
-Publishing a GitHub release whose tag matches `v<package.json version>` triggers `.github/workflows/publish.yml`. The workflow publishes the public npm package with provenance. For the first npm release, add a repository environment named `npm` and an `NPM_TOKEN` secret with publish access. After the package exists, npm trusted publishing can replace the long-lived token:
+Publishing a GitHub release whose tag matches `v<package.json version>` triggers `.github/workflows/publish.yml`. The workflow uses npm Trusted Publishing (OIDC) to publish the public package with provenance and does not require a long-lived npm token. Configure the package's trusted publisher with:
 
 - npm package: `inha-library-availability-mcp`
 - GitHub owner: `seawhanlee`
 - GitHub repository: `inha-library-availability-mcp`
 - workflow filename: `publish.yml`
 - environment: `npm`
+- allowed action: `npm publish`
 
 The release job intentionally refuses tags that do not exactly match the package version.

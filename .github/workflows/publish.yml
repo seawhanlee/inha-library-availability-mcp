@@ -33,7 +33,5 @@ jobs:
       - name: Verify package
         run: npm run typecheck && npm test && npm run build
 
-      - name: Publish public package with provenance
+      - name: Publish public package with trusted publishing
         run: npm publish --access public --provenance
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
