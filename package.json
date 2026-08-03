@@ -48,7 +48,7 @@
     "provenance": true
   },
   "dependencies": {
-    "@modelcontextprotocol/server": "2.0.0-beta.5",
+    "@modelcontextprotocol/server": "2.0.0",
     "zod": "^4.0.0"
   },
   "devDependencies": {
